@@ -72,8 +72,8 @@ const Modal = ({ onClose }) => {
 
     return (
         <div className="fixed z-50 inset-0 flex items-center justify-center bg-black bg-opacity-50 text-black">
-            <div className="w-90 bg-sky-800 rounded-2xl p-5 shadow-md max-w-[600px] flex flex-col items-center justify-center min-h-screen">
-                <h1>Se connecter</h1>
+            <div className="w-90 bg-sky-800 rounded-2xl p-5 shadow-md max-w-[600px] flex flex-col items-center justify-center">
+                <h1 className='text-white font-bold text-2xl text-center py-6'>Se connecter</h1>
                 <div className='bg-white w-35 h-35 px-5 py-10 rounded shadow-md'>
                     <form className='flex flex-col rounded' onSubmit={handleSubmit} action="">
                         <label>Utilisateur</label>
@@ -92,7 +92,7 @@ const Modal = ({ onClose }) => {
                     <p id="length" ref={lengthRef} className='invalid'>8 caractères minimum</p>
                 </div>
 
-                <button onClick={onClose}>Fermer</button>
+                <button className='bg-red-600 text-white rounded-lg px-4 py-2 mt-10' onClick={onClose}>Fermer</button>
             </div>
         </div>
 
