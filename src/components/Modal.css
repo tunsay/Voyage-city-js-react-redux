@@ -1,0 +1,25 @@
+.invalid{
+    color: red;
+}
+
+.invalid::before{
+    position: relative;
+    left: -7px;
+    content: "X";
+}
+
+.valid {
+    color: green;
+}
+
+.valid::before{
+    position: relative;
+    left: -7px;
+    content: "O";
+}
+
+#message p {
+    margin-left: 7px;
+    padding: 7px 0;
+    font-size: 15px;
+}

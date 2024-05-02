@@ -30,7 +30,7 @@ const Book = () => {
   };
 
   return (
-    <div className="mt-[160px] mx-4 md:mt-[160px] relative">
+    <div className="mt-[160px] mx-4 md:mt-[160px]">
       <div className="bg-white rounded-md max-w-6xl w-full mx-auto">
         <form className="flex flex-col md:flex-row">
           <div className="py-1.5 px-2.5 flex-1 border-r-2">
@@ -43,7 +43,7 @@ const Book = () => {
                 onChange={(e) => handleChange(e)}
               >
                 <option value="" hidden>
-                Selectionnez
+                  Selectionnez
                 </option>
                 <option>Istanbul</option>
                 <option>Paris</option>
